@@ -19,8 +19,8 @@ public class RegistrationTest extends TestBase {
 	public static Object[][] data(){
 		
 		return new Object [][] {
-			{"mostafa" , "nasr" , "testemail19@gmail.com" , "1234567" },
-			{"mostafa" , "nasr" , "testemail20@gmail.com" , "1234567" }	
+			{"mostafa" , "nasr" , "testemail200@gmail.com" , "1234567" },
+			{"mostafa" , "nasr" , "testemail400@gmail.com" , "1234567" }	
 		};
 	}
 	
@@ -29,7 +29,9 @@ public class RegistrationTest extends TestBase {
 	public void registrationSuccessfuly(String Firstname, String Lastname , String Email , String Password) {
 		//registeration
 		homepage = new HomePage(driver); 
+		homepage.openRegistPage();
 		registerpage = new RegistrationPage(driver);
+		
 		registerpage.registerationUse(Firstname,Lastname, Email, Password);
 		Assert.assertTrue(registerpage.sucessmsg.getText().contains("completed"));
 		

@@ -3,15 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="bdd.RunnerTest">
+      <class name="tests.RegistrationTest">
         <methods>
           <include name="driverStart"/>
-          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="registrationSuccessfuly" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="driverEnd"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- bdd.RunnerTest -->
+      </class> <!-- tests.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
